@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    background-color: #000000;
+    color: #f5f5f5;
+}
+/* cabeçalho */
+header {
+    background-color: #632f11;
+    border-radius: 0 0 200px 200px;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.logo {
+    width: 50px;
+    height: 50px;
+}
+h1 {
+    font-size: 70px;
+    font-family: 'Playfair Display', serif;
+    font-style: italic; /* Fica linda em itálico */
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/*chamar atenção para a seção hero*/
+.hero {
+    background-image: url('./imagem/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+    font-size: 30px;
+}
+/*CORPO PRINCIPAL*/
+main {
+    padding: 20px;
+}
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+} 
+
+/*alinhamento dos cafés*/
+.cafes {
+    display: flex;
+    gap: 60px;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+/* ajuste de imagens dos café*/
+.cafe-espresso, .cafe-gelado, .cafe-capuccino {
+    width: 230px;
+    height: 180px;
+} 
+
+
+/* Estilo para os cafés (caixas) */
+.café-espresso, .café-gelado, .café-capuccino {
+    background-color: #632f11;
+    border-radius: 10px;
+    width: 240px;
+    height: 250px;
+    padding: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+/* Efeito de 'hover' (se destaca ao passa o mouse) para os cafés */
+.café-espresso:hover, .café-gelado:hover, .café-capuccino:hover { 
+    transform: scale(1.05);
+}
+
+/*alinhamento dos doces*/
+.doces {
+    display: flex;
+    gap: 60px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* ajuste de imagens dos doces*/
+.doce-bolo, .doce-trufa, .doce-cookie {
+    width: 230px;
+    height: 180px;
+}
+
+/* Estilo para os doces (caixas) */
+.bolo, .trufa, .cookie {
+    background-color: #632f11;
+    border-radius: 10px;
+    width: 240px;
+    height: 250px;
+    padding: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+.bolo:hover, .trufa:hover, .cookie:hover { 
+    transform: scale(1.05);
+}
+/*alinhamento dos salgados*/
+.salgados {
+    display: flex;
+    gap: 60px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+/* ajuste de imagens dos salgados*/
+.salgado-empada, .salgado-empanada, .salgado-pastel {
+    width: 230px;
+    height: 180px;
+}
+/* Estilo para os salgados (caixas) */
+.empada, .empanada, .pastel {
+    background-color: #632f11;
+    border-radius: 10px;
+    width: 240px;
+    height: 250px;
+    padding: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+/* Efeito de 'hover' (se destaca ao passa o mouse) para os salgados */
+.empada:hover, .empanada:hover, .pastel:hover { 
+    transform: scale(1.05);
+}
+
+/* rodapé */
+footer {
+    background-color: #632f11;
+    border-radius: 200px 200px 0 0;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/*contato.html*/
+.contatos {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    background-color: #632f11;
+    padding: 40px;
+    border-radius: 20px;
+    height: 300px;
+    width: 400px;
+    margin: 40px auto;
+}
+
+.contato {
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.a {
+    text-decoration: underline;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .cafes, .doces, .salgados {
+        flex-direction: column;
+        align-items: center;
+    }
+}
